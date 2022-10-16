@@ -1,2 +1,2 @@
 print('demo message')
-print('hi Sushmita')
+print('Hi sushmita')
