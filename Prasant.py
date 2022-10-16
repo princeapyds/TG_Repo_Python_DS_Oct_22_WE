@@ -1,2 +1,2 @@
-a = "I am prasant"
-print(a)
+b = "singh is king"
+print(b)
