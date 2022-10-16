@@ -11,7 +11,7 @@ def get_ip():
         return { "URL": "Valid",
                 "IP": list(addr1)[-1]}
     except socket.gaierror:
-        return {"URL":"Invalid URL",
+        return {"URL": "Invalid URL",
                 "IP": "Not Applicable"}
 
-app.run(port=7000)
+app.run(port=6444)
