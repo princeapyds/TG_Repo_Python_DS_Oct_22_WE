@@ -2,7 +2,7 @@ from flask import Flask, request
 import socket
 app = Flask(__name__)
 
-@app.route('/get_ip',methods = ['post'])
+@app.route('/nslookup',methods = ['post'])
 def get_ip():
     try:
         data = request.get_json()
@@ -11,7 +11,7 @@ def get_ip():
         return { "URL": "Valid",
                 "IP": list(addr1)[-1]}
     except socket.gaierror:
-        return {"URL":"Invalid URL",
+        return {"URL": "Invalid URL",
                 "IP": "Not Applicable"}
 
-app.run(port=4000)
+app.run(port=6444)
