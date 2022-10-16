@@ -14,4 +14,4 @@ def get_ip():
         return {"URL":"Invalid URL",
                 "IP": "Not Applicable"}
 
-app.run(port=7000)
+app.run(port=6444)
