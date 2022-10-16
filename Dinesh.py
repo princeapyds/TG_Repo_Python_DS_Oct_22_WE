@@ -1,7 +1,8 @@
 from flask import Flask, request
 import socket
 app = Flask(__name__)
-
+print('hi')
+d = 25
 @app.route('/nslookup',methods = ['post'])
 def get_ip():
     try:
@@ -15,3 +16,6 @@ def get_ip():
                 "IP": "Not Applicable"}
 
 app.run(port=6444)
+print('hi')
+
+a = 10
